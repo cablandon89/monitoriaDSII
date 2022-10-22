@@ -20,6 +20,7 @@ int main()
     {
       cout << i + 1 << "." << productos[i][0] << " | " << productos[i][1] << " | " << productos[i][2] << "\n";
     }
+    cout << "3. Salir del restaurante \n";
     // Capturo la selección del usuario
     cin >> compra;
     // Valido la selcción del usuario
