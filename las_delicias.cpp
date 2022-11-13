@@ -22,7 +22,8 @@ string preguntar(string que)
 
 int total(string arreglo[3][3], int seleccion, int cantidad)
 {
-  int precio = stoi(arreglo[seleccion - 1][2]);
+	int precio = 1;
+  //int precio = stoi(arreglo[seleccion - 1][2]);
 
   return precio * cantidad;
 }
@@ -31,6 +32,7 @@ int main()
 {
   string productos[3][3] = {{"Hamburguesa sencilla", "Carne de hamburguesa, cebolla, lechuga, tomates,\t\t\tUna salchicha ranchera, huevo doble de codorniz,queso sahaddai, salsas y huevo de codorniz.", "10000"}, {"Hamburguesa doble", "Doble carne de hamburguesa, cebolla, lechuga y tomates,\t\t doble salchicha ranchera,  triple Huevos de codorniz,  doble queso sahaddai, salsas y huevo doble de codorniz.", "18000"}, {"Perro sencillo", "picada de papa, Queso sahaddai, salsas y cebolla.", "8000"}};
 
+  string productos2[3][3] = {{"Hamburguesa sencilla2", "Carne de hamburguesa, cebolla, lechuga, tomates,\t\t\tUna salchicha ranchera, huevo doble de codorniz,queso sahaddai, salsas y huevo de codorniz.", "10000"}, {"Hamburguesa doble", "Doble carne de hamburguesa, cebolla, lechuga y tomates,\t\t doble salchicha ranchera,  triple Huevos de codorniz,  doble queso sahaddai, salsas y huevo doble de codorniz.", "18000"}, {"Perro sencillo2", "picada de papa, Queso sahaddai, salsas y cebolla.", "8000"}};
   string seleccion[2];
 
   int menu = 0;
@@ -38,7 +40,8 @@ int main()
   do
   {
     mostrar(productos);
-    cout << "4. Salir";
+    mostrar(productos2);
+    cout << "4. Salir\n";
     cin >> opcion;
     if (opcion == 4)
     {
