@@ -22,8 +22,8 @@ string preguntar(string que)
 
 int total(string arreglo[3][3], int seleccion, int cantidad)
 {
-	int precio = 1;
-  //int precio = stoi(arreglo[seleccion - 1][2]);
+  int precio = 1;
+  // int precio = stoi(arreglo[seleccion - 1][2]);
 
   return precio * cantidad;
 }

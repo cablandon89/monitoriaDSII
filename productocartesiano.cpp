@@ -16,8 +16,5 @@ int main(){
 	//(xyz)
 	//(xyz)
 	//{(x,x),(x,y),(x,z),(y,x) ... (z,z)}
-	
-	
-	
 	return 0;
 }
